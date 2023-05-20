@@ -2,7 +2,7 @@ clean:
 	cargo fix --allow-dirty
 
 fmt:
-	rustfmt src/*
+	rustfmt src/**/*.rs
 
 run:
 	cargo run
