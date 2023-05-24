@@ -1,10 +1,10 @@
 use super::method::{Method, MethodError};
+use super::QueryString;
 use std::convert::TryFrom;
 use std::error::Error;
 use std::fmt::Debug;
 use std::fmt::{Display, Formatter, Result as FmtResult};
 use std::str::{self, Utf8Error};
-use super::QueryString;
 
 #[derive(Debug)]
 pub struct Request<'buf> {
